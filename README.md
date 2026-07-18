@@ -2,6 +2,10 @@
 
 Frontend de un dashboard profesional para consolidar metricas de rendimiento de anuncios y productos en multiples plataformas.
 
+## Preview
+
+![Dashboard preview](assets/dashboard-preview.png)
+
 ## Vista general
 
 Este proyecto muestra un panel administrativo en una sola pagina con:

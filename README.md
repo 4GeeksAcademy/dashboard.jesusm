@@ -1,41 +1,86 @@
-# HTML Hello
+# Dashboard Frontend - Influencer Performance
 
-The most basic boilerplate for any 4Geeks Academy student, start your very first website from scratch.
+Frontend de un dashboard profesional para consolidar metricas de rendimiento de anuncios y productos en multiples plataformas.
 
-> There is a video tutorial on [how to use this template to create your very first website here](https://youtu.be/dfbDCMu_p-0).
+## Vista general
 
-## What to do next?
+Este proyecto muestra un panel administrativo en una sola pagina con:
 
-Create an `index.html` file with the [basic HTML structure](http://4geeks.com/lesson/what-is-html-learn-html#page-structure) and see it live by running a web-server using the following command:
+1. Resumen ejecutivo con KPIs clave.
+2. Drivers del rendimiento (funnel, calidad, plataformas, actividad y engagement).
+3. Detalle operacional con tablas, filtros visuales y alertas.
+
+## Tecnologias
+
+1. HTML5
+2. Tailwind CSS por CDN
+3. Flask (solo para levantar servidor local)
+
+CDN utilizado en la pagina:
+
+```html
+<script src="https://cdn.tailwindcss.com"></script>
+```
+
+## Estructura del proyecto
+
+1. `index.html`: interfaz completa del dashboard.
+2. `server.py`: servidor local para previsualizar el proyecto.
+3. `learn.json`: metadata del ejercicio.
+
+## Como ejecutar en local
+
+1. Instala dependencias:
 
 ```bash
-$ pip3 install flask && python3 server.py
+pip3 install flask
 ```
 
-- You can create as many HTML files as you want.
-- You can also create CSS files and import them into your website using a `<link>` tag placed between the `<head></head>` tags, like this:
+2. Inicia el servidor:
 
-```html
-<head>
-  ...
-  <link rel="stylesheet" type="text/css" href="styles.css">
-  ...
-</head>
+```bash
+python3 server.py
 ```
 
-- If you want to use Tailwind CSS, add it optionally via the official Tailwind CSS v4 CDN inside the same `<head>`:
+3. Abre en el navegador:
 
-```html
-<head>
-  ...
-  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-  <link rel="stylesheet" type="text/css" href="styles.css">
-  ...
-</head>
+```text
+http://127.0.0.1:3000
 ```
 
-### Contributors
+## Secciones de la interfaz
 
-This template was built as part of the [Full Stack Developer course](https://4geeksacademy.com/us/coding-bootcamps/part-time-full-stack-developer) at [4Geeks Academy Coding Bootcamp](https://4geeksacademy.com/us/coding-bootcamp) by [Alejandro Sanchez](https://twitter.com/alesanchezr) and [many other contributors](https://github.com/4GeeksAcademy/html-hello/graphs/contributors).
+1. Sidebar con navegacion y estado del periodo.
+2. Navbar superior con accion de exportar reporte.
+3. Bloque de KPIs en tarjetas responsivas.
+4. Paneles intermedios de analisis por driver.
+5. Tablas operacionales de productos, plataformas y campanas.
+6. Alertas de negocio y filtros visuales simulados.
 
-You can find other templates and resources like this at the [school's GitHub page](https://github.com/4geeksacademy/).
+## Datos y contexto de negocio
+
+1. Productos de ejemplo:
+   Producto A: 50 EUR
+   Producto B: 120 EUR
+   Producto C: 80 EUR
+2. Comision aplicada: 15% por venta.
+3. Plataformas incluidas: Instagram, TikTok y YouTube.
+4. Los valores son datos dummy coherentes para demo.
+
+## Responsive design
+
+El dashboard esta construido con grid y utilidades Tailwind para adaptarse a:
+
+1. Movil (una columna principal)
+2. Tablet (distribucion intermedia)
+3. Desktop (layout admin con sidebar fija)
+
+## Personalizacion rapida
+
+1. Cambia colores globales editando clases Tailwind en `body`, `aside` y tarjetas.
+2. Ajusta metricas directamente en `index.html` para conectar con tus reportes reales.
+3. Sustituye iconos y textos para adaptar el panel a tu marca personal.
+
+## Estado del proyecto
+
+Version inicial funcional del frontend completada y lista para evolucionar hacia una integracion con datos reales (API o JSON).

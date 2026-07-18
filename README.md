@@ -6,6 +6,10 @@ Frontend de un dashboard profesional para consolidar metricas de rendimiento de 
 
 ![Dashboard preview](assets/dashboard-preview.png)
 
+Guarda la captura del dashboard en esta ruta para que se muestre en GitHub:
+
+assets/dashboard-preview.png
+
 ## Vista general
 
 Este proyecto muestra un panel administrativo en una sola pagina con:

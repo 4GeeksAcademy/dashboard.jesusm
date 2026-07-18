@@ -5,8 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Dashboard Influencer - Rendimiento de Anuncios y Productos</title>
+    <style>
+        article.bg-white.rounded-xl.shadow.p-4.border.border-gray-100 > p.text-xs.uppercase,
+        article.bg-white.rounded-xl.shadow.p-5.border.border-gray-100 > p.text-xs.uppercase {
+            background: linear-gradient(90deg, #1e293b, #334155);
+            color: #e2e8f0;
+            padding: 0.6rem 1rem;
+            border-top-left-radius: 0.75rem;
+            border-top-right-radius: 0.75rem;
+            letter-spacing: 0.08em;
+        }
+
+        article.bg-white.rounded-xl.shadow.p-4.border.border-gray-100 > p.text-xs.uppercase {
+            margin: -1rem -1rem 0.9rem -1rem;
+        }
+
+        article.bg-white.rounded-xl.shadow.p-5.border.border-gray-100 > p.text-xs.uppercase {
+            margin: -1.25rem -1.25rem 0.9rem -1.25rem;
+        }
+
+        article.bg-white.rounded-xl.shadow.border.border-gray-100.overflow-hidden > div.p-5 {
+            background: linear-gradient(90deg, #1e293b, #334155);
+            border-bottom-color: #334155;
+        }
+
+        article.bg-white.rounded-xl.shadow.border.border-gray-100.overflow-hidden > div.p-5 h4,
+        article.bg-white.rounded-xl.shadow.border.border-gray-100.overflow-hidden > div.p-5 p {
+            color: #f8fafc;
+        }
+
+        article.bg-white.rounded-xl.shadow.border.border-gray-100.overflow-hidden > div.p-5 p {
+            opacity: 0.9;
+        }
+    </style>
 </head>
-<body class="bg-slate-300 text-gray-800">
+<body class="text-gray-800 bg-cover bg-center bg-fixed" style="background-image: linear-gradient(rgba(255, 255, 255, 0.72), rgba(255, 255, 255, 0.72)), url('assets/ChatGPT Image Jul 18, 2026, 03_59_06 PM.png');">
     <div class="min-h-screen lg:flex">
         <aside class="w-full lg:w-64 bg-slate-900 text-slate-200 p-6 lg:sticky lg:top-0 lg:h-screen shadow-xl">
             <div class="flex items-center gap-3 mb-8">
@@ -32,18 +65,18 @@
         </aside>
 
         <main class="flex-1 p-4 sm:p-6 lg:p-8">
-            <header class="bg-white rounded-2xl shadow-sm border border-gray-100 p-4 sm:p-5 mb-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
-                <div>
-                    <p class="text-xs uppercase tracking-wider text-gray-400">Dashboard consolidado</p>
-                    <h2 class="text-2xl font-semibold text-gray-900">Rendimiento de anuncios y productos</h2>
-                    <p class="text-sm text-gray-500 inline-flex items-center gap-3">
+            <header class="bg-white rounded-2xl shadow-sm border border-gray-100 p-4 sm:p-5 mb-6 grid grid-cols-1 lg:grid-cols-[1fr_auto] items-center gap-4">
+                <div class="text-center">
+                    <p class="inline-flex items-center justify-center px-5 py-2 rounded-full bg-gradient-to-r from-slate-800 to-slate-700 text-slate-200 text-lg font-semibold uppercase tracking-wider shadow-sm">Dashboard consolidado</p>
+                    <h2 class="mt-2 text-3xl font-semibold text-gray-900">Rendimiento de anuncios y productos</h2>
+                    <p class="mt-1 text-sm text-gray-500 inline-flex items-center gap-3">
                         <img src="https://cdn.simpleicons.org/instagram/E4405F" alt="Instagram" class="w-4 h-4" />
                         <img src="https://cdn.simpleicons.org/tiktok/111111" alt="TikTok" class="w-4 h-4" />
                         <img src="https://cdn.simpleicons.org/youtube/FF0000" alt="YouTube" class="w-4 h-4" />
                         <span>en una sola vista.</span>
                     </p>
                 </div>
-                <div class="flex items-center gap-2">
+                <div class="flex items-center justify-center lg:justify-end gap-2">
                     <button class="inline-flex items-center px-4 py-2 rounded-lg bg-white border border-gray-200 text-sm font-medium text-gray-600 hover:bg-gray-50">Filtrar periodo</button>
                     <button class="inline-flex items-center px-4 py-2 rounded-lg bg-blue-600 text-white text-sm font-medium hover:bg-blue-700">Exportar reporte</button>
                 </div>
